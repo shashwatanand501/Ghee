@@ -1,0 +1,35 @@
+#shop-now {
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+}
+
+.card_container {
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    width: 100%;
+    flex-wrap: wrap;
+    /* Allow wrapping for smaller screens */
+}
+
+.card_container>div {
+    flex: 1 1 45%;
+    margin: 10px;
+    max-width: 45%;
+    box-sizing: border-box;
+    min-width: 300px;
+    height: auto;
+}
+
+@media (max-width: 698px) {
+    .card_container>div {
+        flex: 1 1 100%;
+        /* Cards take full width on smaller screens */
+        max-width: 100%;
+        height: auto;
+        /* Adjust height for smaller screens */
+    }
+}

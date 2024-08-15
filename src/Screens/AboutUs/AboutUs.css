@@ -1,0 +1,63 @@
+.aboutUs {
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    gap: 50px;
+    margin: 35px 0px;
+}
+
+.logo-text,
+.about_us_article,
+#about-us {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+#about-us {
+    flex-direction: column;
+}
+
+.logo-text p {
+    text-align: center;
+    font-size: 0.6rem;
+}
+
+.logo-text img {
+    width: 45%;
+}
+
+.phone {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.about_us_article {
+    width: 70%;
+    align-items: center;
+    gap: 60px;
+}
+
+.phoneImage {
+    width: 70%;
+}
+
+@media (max-width: 407px) {
+    .aboutUs {
+        gap: 25;
+    }
+
+}
+
+@media (max-width: 698px) {
+    .article {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+}

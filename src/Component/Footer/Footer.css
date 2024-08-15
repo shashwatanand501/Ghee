@@ -1,0 +1,151 @@
+footer {
+  background-color: #fdf4d7;
+  padding: 1px 20px;
+  font-family: Arial, sans-serif;
+}
+
+.footer-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1200px;
+  margin: 0 auto;
+  flex-wrap: wrap;
+}
+
+.footer-logo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.footer-logo img {
+  max-width: 100px;
+  margin-bottom: 10px;
+}
+
+.footer-button {
+  background-color: transparent;
+  border: 2px solid #ffcc00;
+  border-radius: 20px;
+  padding: 10px 20px;
+  cursor: pointer;
+  font-size: 14px;
+  margin-top: 10px;
+  display: flex;
+  align-items: center;
+}
+
+.footer-button img {
+  margin: 0px 6px 0px 0px !important;
+}
+
+.footer-links {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  max-width: 600px;
+  color: #333;
+}
+
+.footer-column {
+  margin: 20px;
+  text-align: left;
+  flex: 1;
+}
+
+.footer-column h4 {
+  font-size: 16px;
+  margin-bottom: 10px;
+}
+
+.footer-column ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.footer-column ul li {
+  margin-bottom: 5px;
+  font-size: 14px;
+
+}
+
+.footer-column ul li a {
+  text-decoration: none;
+  cursor: pointer;
+  color: #000;
+}
+
+.footer-bottom {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 20px;
+  width: 100%;
+  border-top: 1px solid #e0e0e0;
+  padding-top: 10px;
+  font-size: 12px;
+  color: #3339;
+}
+
+.footer-bottom p {
+  margin: 0;
+  color: #233D4D;
+}
+
+.footer-social {
+  display: flex;
+  gap: 10px;
+}
+
+.footer-social a {
+  color: #000;
+  font-size: 20px;
+}
+
+@media (max-width: 768px) {
+  .footer-container {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .footer-links {
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+  }
+
+  .footer-column {
+    margin: 10px 0;
+  }
+
+  .footer-bottom {
+    flex-direction: column;
+    gap: 10px;
+    text-align: center;
+  }
+}
+
+@media (max-width: 768px) {
+  .footer-column ul li {
+    font-size: 8px;
+  }
+
+  .footer-column h4 {
+    text-align: center;
+
+    font-size: 10px;
+  }
+
+  .footer-column ul li {
+    text-align: center;
+
+  }
+}
+
+@media (max-width: 491px) {
+  .footer-links {
+    flex-direction: column-reverse;
+  }
+}
